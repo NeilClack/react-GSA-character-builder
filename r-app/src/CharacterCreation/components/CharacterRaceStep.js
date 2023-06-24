@@ -72,7 +72,7 @@ const CharacterRaces = ({ races }) => {
                       <div className="col-sm-6 text-glow">
                         <h2 className="text-glow">{race[0]}</h2>
                         <div className="race-discription text-glow">
-                          {race[1].discription}
+                          {race[1].description}
                         </div>
                         <h2 className="text-glow">Attributes</h2>
                         {race[1].attributes}
