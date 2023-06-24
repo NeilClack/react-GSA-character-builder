@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import articlesContent from './article-content';
+import articlesContent from '../store/data/article-content';
 import CommentsList from '../components/CommentsList'
-import ArticlesList from '../components/ArticlesList';
+import ArticlesList from './components/ArticlesList';
 import UpvotesSection from '../components/UpvotesSection';
-import NotFoundPage from './NotFoundPage';
+import NotFoundPage from '../Errors/NotFoundPage';
 
 
 const ArticlePage = ({ match }) => {

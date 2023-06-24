@@ -4,13 +4,13 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ArticlePage from './pages/ArticlePage';
-import NotFoundPage from './pages/NotFoundPage';
-import ArticlesListPage from './pages/ArticlesListPage';
-import CharacterCreationPage from './pages/CharacterCreationPage';
-import NavBar from './pages/NavBar';
+import HomePage from './Home/HomePage';
+import AboutPage from './About/AboutPage';
+import ArticlePage from './Blog/ArticlePage';
+import NotFoundPage from './Errors/NotFoundPage';
+import ArticlesListPage from './Blog/ArticlesListPage';
+import CharacterCreationPage from './CharacterCreation/CharacterCreationPage';
+import NavBar from './UI/NavBar';
 import './App.css';
 
 function App() {

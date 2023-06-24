@@ -1,10 +1,10 @@
 import React from 'react';
 // character data
-import RaceContent from './raceContent';
-import ClassContent from './classContent';
+import RaceContent from '../pages/raceContent';
+import ClassContent from '../pages/classContent';
 // components
-import CharacterRaceStep from '../components/characterCreation/CharacterRaceStep';
-import CharacterClassStep from '../components/characterCreation/CharacterClassStep';
+import CharacterRaceStep from './components/CharacterRaceStep';
+import CharacterClassStep from './components/CharacterClassStep';
 
 let glowSize = 0;
 let peakTime = 0;

@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import DraggableLi from './DraggableLi';
+import DraggableLi from '../../components/characterCreation/DraggableLi';
 import update from 'immutability-helper';
 
 function CharachterSheet({characterData}) {
