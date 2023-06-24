@@ -1,7 +1,7 @@
 import React from 'react';
 // character data
-import RaceContent from '../pages/raceContent';
-import ClassContent from '../pages/classContent';
+import RaceContent from '../store/data/raceContent';
+// import ClassContent from '../store/data/classContent';
 // components
 import CharacterRaceStep from './components/CharacterRaceStep';
 import CharacterClassStep from './components/CharacterClassStep';
@@ -12,22 +12,18 @@ let glowDirection = "up";
 setInterval(
 	function(){
 		let textGlow = document.querySelectorAll('.text-glow');
-		if(glowSize <= 15 && glowDirection == "up") {
+		if(glowSize <= 15 && glowDirection === "up") {
 			glowSize++;
-			if(glowSize == 15) glowDirection = "down"
+			if(glowSize === 15) glowDirection = "down"
 		}
-		if(glowDirection == "down") {
-			if(peakTime >= 20 && peakTime % 2 == 0) glowSize--;
+		if(glowDirection === "down") {
+			if(peakTime >= 20 && peakTime % 2 === 0) glowSize--;
 			peakTime++
-			if(glowSize == 0) glowDirection = "up"
+			if(glowSize === 0) glowDirection = "up"
 		}
 		[...textGlow].forEach(e => e.style.textShadow = `0 0 ${glowSize}px rgba(0,255,65,1)`)
 	}, 
 10);
-
-function Switcharoo() {
-
-}
 
 function CharacterCreationPage() {
 	return (
