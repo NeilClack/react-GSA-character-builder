@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import { Link } from 'react-router-dom';
 import { useDrag, useDrop } from 'react-dnd';
 
 function DraggableLI({ id, stat, index, moveLi, stats}) {
@@ -62,7 +61,7 @@ function DraggableLI({ id, stat, index, moveLi, stats}) {
 
     let t = 0
     let resetStats = setInterval(function(){
-        if(t == 1) {
+        if(t === 1) {
             let z = 0
             for(z = 0; z < stats.length; z++) {
                 let statUpdate = document.getElementById(stats[z]+'-'+z)
@@ -76,7 +75,7 @@ function DraggableLI({ id, stat, index, moveLi, stats}) {
                 }
             }
         }
-        if(t == 2) clearInterval(resetStats)
+        if(t === 2) clearInterval(resetStats)
         t++
     },200)
 
