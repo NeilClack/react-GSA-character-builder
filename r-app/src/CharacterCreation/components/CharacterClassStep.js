@@ -167,7 +167,7 @@ function CharacterClass({ races }) {
   }
 
   return (
-    <>
+    <React.Fragment>
       <div className="row">
         <div className="col-sm-4 offset-sm-4 text-center">
           <h1 className="text-glow">Choose your characters race</h1>
@@ -211,7 +211,7 @@ function CharacterClass({ races }) {
           </ul>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

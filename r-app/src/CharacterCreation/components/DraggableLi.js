@@ -91,14 +91,14 @@ function DraggableLI({ id, stat, index, moveLi, stats }) {
   }, 200);
 
   return (
-    <>
+    <React.Fragment>
       <li
         id={stat}
         ref={ref}
         style={{ ...style, opacity }}
         className="character-sheet-stat text-center text-glow"
       ></li>
-    </>
+    </React.Fragment>
   );
 }
 

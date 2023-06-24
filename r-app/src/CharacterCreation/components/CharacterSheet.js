@@ -61,7 +61,7 @@ function CharachterSheet({ characterData }) {
   };
 
   return (
-    <>
+    <React.Fragment>
       <div className="row character-sheet-row-1">
         <div className="col text-center text-glow">
           Name
@@ -145,7 +145,7 @@ function CharachterSheet({ characterData }) {
           </div>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

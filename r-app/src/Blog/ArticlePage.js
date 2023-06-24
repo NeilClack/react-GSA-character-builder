@@ -26,7 +26,7 @@ const ArticlePage = ({ match }) => {
     (article) => article.name !== name
   );
   return (
-    <>
+    <React.Fragment>
       <h1>{article.title}</h1>
       <UpvotesSection
         articleName={name}
@@ -39,7 +39,7 @@ const ArticlePage = ({ match }) => {
       <CommentsList comments={articleInfo.comments} />
       <h3>Other Articles:</h3>
       <ArticlesList articles={otherArticles} />
-    </>
+    </React.Fragment>
   );
 };
 

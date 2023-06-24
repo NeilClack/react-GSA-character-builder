@@ -1,7 +1,7 @@
 import React from "react";
 
 const CommentsList = ({ comments }) => (
-  <>
+  <React.Fragment>
     <h3>Comments:</h3>
     {comments.map((comment, key) => (
       <div className="comment" key={key}>
@@ -9,7 +9,7 @@ const CommentsList = ({ comments }) => (
         <p>{comment.text}</p>
       </div>
     ))}
-  </>
+  </React.Fragment>
 );
 
 export default CommentsList;

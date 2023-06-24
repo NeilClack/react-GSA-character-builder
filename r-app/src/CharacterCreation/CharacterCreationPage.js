@@ -27,14 +27,14 @@ setInterval(function () {
 
 function CharacterCreationPage() {
   return (
-    <>
+    <React.Fragment>
       <div id="CharacterRaceStep">
         <CharacterRaceStep races={RaceContent} />
       </div>
       <div id="CharacterClassStep" style={{ display: "none" }}>
         <CharacterClassStep races={RaceContent} />
       </div>
-    </>
+    </React.Fragment>
   );
 }
 
