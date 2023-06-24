@@ -1,17 +1,13 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ArticlePage from './pages/ArticlePage';
-import NotFoundPage from './pages/NotFoundPage';
-import ArticlesListPage from './pages/ArticlesListPage';
-import CharacterCreationPage from './pages/CharacterCreationPage';
-import NavBar from './pages/NavBar';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import HomePage from "./Home/HomePage";
+import AboutPage from "./About/AboutPage";
+import ArticlePage from "./Blog/ArticlePage";
+import NotFoundPage from "./Errors/NotFoundPage";
+import ArticlesListPage from "./Blog/ArticlesListPage";
+import CharacterCreationPage from "./CharacterCreation/CharacterCreationPage";
+import NavBar from "./UI/NavBar";
+import "./App.css";
 
 function App() {
   return (
@@ -25,7 +21,11 @@ function App() {
             <Route path="/article/:name" component={ArticlePage} exact />
             <Route path="/article-list" component={ArticlesListPage} exact />
 
-            <Route path="/characters/new" component={CharacterCreationPage} exact />
+            <Route
+              path="/characters/new"
+              component={CharacterCreationPage}
+              exact
+            />
             <Route component={NotFoundPage} />
           </Switch>
         </div>
