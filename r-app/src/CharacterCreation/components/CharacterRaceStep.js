@@ -3,7 +3,7 @@ import Modal from "react-modal";
 import CharacterSheet from "./CharacterSheet";
 import { rollBaseStats } from "../utils/utils";
 
-const defaultModalIsOpenState = {
+const _DEFAULTMODALISOPENSTATE = {
   0: false,
   1: false,
   2: false,
@@ -40,11 +40,11 @@ const CharacterRaces = ({ races }) => {
     },
   };
 
-  const [modalIsOpen, setModalIsOpen] = useState(defaultModalIsOpenState);
+  const [modalIsOpen, setModalIsOpen] = useState(_DEFAULTMODALISOPENSTATE);
 
   function openModalHandler(key) {
     setModalIsOpen(() => ({
-      ...defaultModalIsOpenState,
+      ..._DEFAULTMODALISOPENSTATE,
       [key]: true,
     }));
   }
