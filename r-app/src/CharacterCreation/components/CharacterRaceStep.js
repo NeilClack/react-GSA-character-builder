@@ -72,6 +72,8 @@ function CharacterRaces({races}) {
 				case "wildcard":
 					 wildcards += backendData.attributes[i][0]
 					break;
+				default:
+					console.log("Failed to match any case!")
 			}
 		}
 
